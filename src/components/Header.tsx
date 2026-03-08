@@ -74,11 +74,11 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
               )}
             </button>
             <a
-              href="tel:+25862323258"
+              href="tel:+919158888345"
               className="hidden xl:flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
             >
               <Phone className="w-4 h-4" />
-              +258 6232 3258
+              +91 9158 888 345
             </a>
             <button
               onClick={() => setMobileOpen(true)}
@@ -154,11 +154,11 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
                 ))}
               </nav>
               <a
-                href="tel:+25862323258"
+                href="tel:+919158888345"
                 className="mt-8 flex items-center gap-2 bg-primary text-primary-foreground px-4 py-3 rounded-full text-sm font-medium justify-center"
               >
                 <Phone className="w-4 h-4" />
-                +258 6232 3258
+                +91 9158 888 345
               </a>
             </motion.div>
           </>
