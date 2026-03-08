@@ -7,6 +7,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import CartSidebar from "@/components/CartSidebar";
 import WishlistSidebar from "@/components/WishlistSidebar";
 import { useCart } from "@/context/CartContext";
+import servicesHeroBg from "@/assets/services-hero-bg.jpg";
 
 const services = [
   { icon: Stethoscope, title: "Veterinary Care", desc: "Regular check-ups, vaccinations, and emergency care from certified veterinarians.", features: ["Annual check-ups", "Vaccinations", "Emergency care", "Dental cleaning"] },
@@ -31,9 +32,13 @@ const ServicesPage = () => {
       <Header cartCount={totalItems} onCartClick={() => setCartOpen(true)} />
       <main>
         {/* Hero */}
-        <section className="bg-hero-bg py-16 md:py-24 relative overflow-hidden">
+        <section className="relative py-16 md:py-24 overflow-hidden">
+          <div className="absolute inset-0">
+            <img src={servicesHeroBg} alt="" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-background/70" />
+          </div>
           <div className="absolute top-10 right-20 w-20 h-20 rounded-full bg-primary/10 animate-float" />
-          <div className="container text-center">
+          <div className="container text-center relative z-10">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-4">
                 <PawPrint className="w-4 h-4" /> Our Services
