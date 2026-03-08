@@ -1,10 +1,10 @@
 import { Truck, RotateCcw, Crown, Headphones } from "lucide-react";
 
 const features = [
-  { icon: Truck, title: "Free Shipping", desc: "Free shipping for orders over $120" },
-  { icon: RotateCcw, title: "Money Back", desc: "Back guarantee within 7 days" },
-  { icon: Crown, title: "Member Offers", desc: "Exclusive deals on orders over $150" },
-  { icon: Headphones, title: "24/7 Support", desc: "Online support available anytime" },
+  { icon: Truck, title: "Free Delivery", desc: "Free shipping on veterinary products over ₹999" },
+  { icon: RotateCcw, title: "Easy Returns", desc: "7-day return guarantee on all dog health products" },
+  { icon: Crown, title: "Vet Approved", desc: "All supplements are veterinary-grade & clinically tested" },
+  { icon: Headphones, title: "Expert Support", desc: "24/7 veterinary product guidance & consultation" },
 ];
 
 const FeaturesSection = () => {

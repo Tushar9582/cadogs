@@ -14,11 +14,12 @@ const BestSellingProducts = () => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-12">
             <div>
               <div className="inline-flex items-center gap-2 text-primary font-medium text-sm mb-3">
-                <PawPrint className="w-4 h-4" /> Best Sellers
+                <PawPrint className="w-4 h-4" /> Top Veterinary Products
               </div>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
-                Best Selling Pet Products
+                Best Selling Dog Health Products
               </h2>
+              <p className="text-muted-foreground text-sm mt-2">Vet-recommended supplements, flea treatments & care essentials for dogs</p>
             </div>
             <a
               href="/shop"
