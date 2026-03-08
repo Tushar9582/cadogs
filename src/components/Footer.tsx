@@ -34,8 +34,8 @@ const Footer = () => {
               Your one-stop shop for premium pet products. We care about your furry, feathery, and scaly friends!
             </p>
             <div className="flex flex-col gap-3 text-sm">
-              <a href="tel:+25862323258" className="flex items-center gap-2 hover:text-primary transition-colors">
-                <Phone className="w-4 h-4 text-primary" /> +258 6232 3258
+              <a href="tel:+919158888345" className="flex items-center gap-2 hover:text-primary transition-colors">
+                <Phone className="w-4 h-4 text-primary" /> +91 9158 888 345
               </a>
               <a href="mailto:hello@cadogs.com" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Mail className="w-4 h-4 text-primary" /> hello@cadogs.com
