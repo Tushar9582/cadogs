@@ -54,7 +54,7 @@ const AboutPage = () => {
                   We're Passionate About Your Pets
                 </h1>
                 <p className="text-muted-foreground text-lg mb-8 max-w-lg">
-                  Founded in 2020, Babet started with a simple mission: provide the highest quality, natural products that pets love and owners trust.
+                  Founded in 2020, Cadogs started with a simple mission: provide the highest quality veterinary pharmaceutical and nutritional products that pets need and owners trust.
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                   {stats.map((s) => (
@@ -147,7 +147,7 @@ const AboutPage = () => {
                   It all began when our founder, Jessica, struggled to find high-quality, natural food for her rescue dog, Max. Every store seemed to stock the same mass-produced products filled with artificial ingredients.
                 </p>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Frustrated but determined, she started researching pet nutrition and connecting with small, ethical pet food producers. What started as a personal quest became Babet — a curated marketplace for pet owners who refuse to compromise on quality.
+                  Frustrated but determined, she started researching pet nutrition and connecting with small, ethical pet food producers. What started as a personal quest became Cadogs — a curated marketplace for pet owners who refuse to compromise on quality.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Today, we serve over 10,000 happy pets and their families, and we're just getting started.

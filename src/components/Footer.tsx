@@ -37,8 +37,8 @@ const Footer = () => {
               <a href="tel:+25862323258" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Phone className="w-4 h-4 text-primary" /> +258 6232 3258
               </a>
-              <a href="mailto:hello@babet.com" className="flex items-center gap-2 hover:text-primary transition-colors">
-                <Mail className="w-4 h-4 text-primary" /> hello@babet.com
+              <a href="mailto:hello@cadogs.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+                <Mail className="w-4 h-4 text-primary" /> hello@cadogs.com
               </a>
               <span className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" /> 123 Pet Street, NY 10001
