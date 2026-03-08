@@ -83,6 +83,7 @@ const BlogPage = () => {
 
   return (
     <>
+      <SEOHead title="Blog — Cadogs Pet Science | Dog Health Tips & Guides" description="Read expert articles on dog health, nutrition, grooming tips, and veterinary advice." canonical="https://cadogs.com/blog" />
       <Header cartCount={totalItems} onCartClick={() => setCartOpen(true)} />
       <main>
         {/* Hero */}

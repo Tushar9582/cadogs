@@ -46,6 +46,7 @@ const ShopPage = () => {
 
   return (
     <>
+      <SEOHead title="Shop — Cadogs Pet Science | Dog Health Products" description="Browse premium veterinary products — flea & tick tablets, joint supplements, heart care, skin & coat support for dogs." canonical="https://cadogs.com/shop" />
       <Header cartCount={totalItems} onCartClick={() => setCartOpen(true)} />
       <main>
         <section className="py-12 md:py-16 relative overflow-hidden" style={{ backgroundImage: `url(${shopHeroBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>

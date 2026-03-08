@@ -30,6 +30,7 @@ const ServicesPage = () => {
 
   return (
     <>
+      <SEOHead title="Services — Cadogs Pet Science | Vet Care & Grooming" description="Explore our pet services — veterinary care, grooming, spa, boarding, training, and adoption programs." canonical="https://cadogs.com/services" />
       <Header cartCount={totalItems} onCartClick={() => setCartOpen(true)} />
       <main>
         {/* Hero */}
