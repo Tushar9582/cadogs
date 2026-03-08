@@ -85,9 +85,13 @@ const BlogPage = () => {
       <Header cartCount={totalItems} onCartClick={() => setCartOpen(true)} />
       <main>
         {/* Hero */}
-        <section className="bg-hero-bg py-12 md:py-16 relative overflow-hidden">
+        <section className="relative py-12 md:py-16 overflow-hidden">
+          <div className="absolute inset-0">
+            <img src={blogHeroBg} alt="" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-background/70" />
+          </div>
           <div className="absolute top-5 left-10 w-16 h-16 rounded-full bg-primary/10 animate-float" />
-          <div className="container text-center">
+          <div className="container text-center relative z-10">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-4">
                 <PawPrint className="w-4 h-4" /> Blog
