@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { PawPrint, Heart, Award, Users, Target, Eye } from "lucide-react";
-import heroPet1 from "@/assets/hero-pet-1.png";
-import heroPet2 from "@/assets/hero-pet-2.png";
+import cadogsHero from "@/assets/cadogs-hero.jpeg";
 import aboutHeroBg from "@/assets/about-hero-bg.jpg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
