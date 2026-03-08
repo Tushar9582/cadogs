@@ -27,12 +27,12 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
     >
       <motion.img
         src={babelLogo}
-        alt="Babet"
-        className="w-24 h-24 mb-6"
+        alt="Cadogs"
+        className="w-32 mb-6"
         animate={{ y: [0, -20, 0] }}
         transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
       />
-      <p className="text-lg font-heading text-foreground mb-4">Loading Babet...</p>
+      <p className="text-lg font-heading text-foreground mb-4">Loading...</p>
       <div className="w-48 h-1.5 bg-muted rounded-full overflow-hidden">
         <motion.div
           className="h-full bg-primary rounded-full"
