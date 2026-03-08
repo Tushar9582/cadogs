@@ -40,6 +40,7 @@ const AboutPage = () => {
         {/* Hero */}
         <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundImage: `url(${aboutHeroBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="absolute inset-0 bg-hero-bg/80" />
+          <div className="container relative z-10">
           <div className="container">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div
