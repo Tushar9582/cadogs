@@ -65,9 +65,9 @@ const ShopPage = () => {
                   </button>
                 ))}
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 w-full sm:w-auto">
                 <SlidersHorizontal className="w-4 h-4 text-muted-foreground shrink-0" />
-                <select value={sort} onChange={(e) => setSort(e.target.value)} className="bg-card border border-border rounded-full px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-primary w-full sm:w-auto">
+                <select value={sort} onChange={(e) => setSort(e.target.value)} className="bg-card border border-border rounded-full px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-primary w-full sm:w-52">
                   {sortOptions.map((o) => (<option key={o}>{o}</option>))}
                 </select>
               </div>
