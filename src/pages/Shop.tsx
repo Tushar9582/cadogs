@@ -1,5 +1,6 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useSearchParams } from "react-router-dom";
 import { PawPrint, Search, SlidersHorizontal } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -17,10 +18,18 @@ const sortOptions = ["Default", "Price: Low to High", "Price: High to Low", "Rat
 
 const ShopPage = () => {
   const { totalItems, setCartOpen } = useCart();
+  const [searchParams] = useSearchParams();
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [sort, setSort] = useState("Default");
   const [quickView, setQuickView] = useState<Product | null>(null);
+
+  useEffect(() => {
+    const cat = searchParams.get("category");
+    if (cat && categories.includes(cat)) {
+      setCategory(cat);
+    }
+  }, [searchParams]);
 
   const filtered = useMemo(() => {
     let result = products.filter((p) => {
