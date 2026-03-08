@@ -7,6 +7,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import CartSidebar from "@/components/CartSidebar";
 import WishlistSidebar from "@/components/WishlistSidebar";
 import { useCart } from "@/context/CartContext";
+import servicesHeroBg from "@/assets/services-hero-bg.jpg";
 
 const services = [
   { icon: Stethoscope, title: "Veterinary Care", desc: "Regular check-ups, vaccinations, and emergency care from certified veterinarians.", features: ["Annual check-ups", "Vaccinations", "Emergency care", "Dental cleaning"] },

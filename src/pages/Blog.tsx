@@ -11,6 +11,7 @@ import { useCart } from "@/context/CartContext";
 import heroPet1 from "@/assets/hero-pet-1.png";
 import heroPet2 from "@/assets/hero-pet-2.png";
 import dealProduct from "@/assets/deal-product.png";
+import blogHeroBg from "@/assets/blog-hero-bg.jpg";
 
 const blogPosts = [
   {
