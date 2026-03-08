@@ -10,6 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import CartSidebar from "@/components/CartSidebar";
 import { products, categories, Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
+import shopHeroBg from "@/assets/shop-hero-bg.jpg";
 
 const sortOptions = ["Default", "Price: Low to High", "Price: High to Low", "Rating"];
 
@@ -36,8 +37,8 @@ const ShopPage = () => {
     <>
       <Header cartCount={totalItems} onCartClick={() => setCartOpen(true)} />
       <main>
-        <section className="bg-hero-bg py-12 md:py-16 relative overflow-hidden">
-          <div className="absolute bottom-0 right-0 w-40 h-40 rounded-full bg-primary/5" />
+        <section className="py-12 md:py-16 relative overflow-hidden" style={{ backgroundImage: `url(${shopHeroBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <div className="absolute inset-0 bg-hero-bg/80" />
           <div className="container text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-4">
