@@ -94,7 +94,7 @@ const BlogPage = () => {
                 Pet Care Tips & Stories
               </h1>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                Expert advice, helpful guides, and heartwarming stories from the Babet community.
+                Expert advice, helpful guides, and heartwarming stories from the Cadogs community.
               </p>
             </motion.div>
           </div>
