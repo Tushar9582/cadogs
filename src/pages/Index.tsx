@@ -16,15 +16,11 @@ import Footer from "@/components/Footer";
 import ColorSwitcher from "@/components/ColorSwitcher";
 import CartSidebar from "@/components/CartSidebar";
 import ScrollToTop from "@/components/ScrollToTop";
+import { useCart } from "@/context/CartContext";
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
-  const [cartOpen, setCartOpen] = useState(false);
-  const [cartCount, setCartCount] = useState(2);
-
-  const handleAddToCart = useCallback(() => {
-    setCartCount((c) => c + 1);
-  }, []);
+  const { totalItems, setCartOpen } = useCart();
 
   return (
     <>
@@ -34,14 +30,14 @@ const Index = () => {
 
       {!loading && (
         <>
-          <Header cartCount={cartCount} onCartClick={() => setCartOpen(true)} />
+          <Header cartCount={totalItems} onCartClick={() => setCartOpen(true)} />
           <main>
             <HeroSection />
             <CategorySection />
             <CtaBanner />
-            <BestSellingProducts onAddToCart={handleAddToCart} />
+            <BestSellingProducts />
             <DealsOfTheDay />
-            <TrendingSection onAddToCart={handleAddToCart} />
+            <TrendingSection />
             <FullWidthBanner />
             <FoodSupplements />
             <TestimonialsSection />
@@ -49,7 +45,7 @@ const Index = () => {
           </main>
           <Footer />
           <ColorSwitcher />
-          <CartSidebar isOpen={cartOpen} onClose={() => setCartOpen(false)} itemCount={cartCount} />
+          <CartSidebar />
           <ScrollToTop />
         </>
       )}
