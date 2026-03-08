@@ -12,7 +12,7 @@ const quickLinks = [
   { label: "Contact", to: "/contact" },
 ];
 const resources = ["FAQ", "Testimonials", "Gallery", "Team", "Pricing"];
-const services = ["Pet Grooming", "Veterinary", "Pet Training", "Pet Boarding", "Pet Adoption"];
+const services = ["Flea & Tick Treatment", "Joint Supplements", "Heart Care", "Skin & Coat", "Dog Shampoo"];
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -31,7 +31,7 @@ const Footer = () => {
               <img src={logo} alt="Cadogs" className="h-10" />
             </div>
             <p className="text-sm mb-6 opacity-80 max-w-xs">
-              Your one-stop shop for premium pet products. We care about your furry, feathery, and scaly friends!
+              India's trusted online store for premium veterinary dog products — flea & tick tablets, joint supplements, heart care, skin & coat support, and medicated shampoos.
             </p>
             <div className="flex flex-col gap-3 text-sm">
               <a href="tel:+919158888345" className="flex items-center gap-2 hover:text-primary transition-colors">

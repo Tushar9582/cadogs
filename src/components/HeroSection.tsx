@@ -12,21 +12,21 @@ import heroPet2 from "@/assets/hero-pet-2.png";
 
 const slides = [
   {
-    subtitle: "Natural Pet Products",
-    title: "The Best Products for Your Pets!",
-    description: "Give your furry friends the love they deserve with our premium selection of natural pet products.",
+    subtitle: "Veterinary Dog Supplements",
+    title: "Premium Health Products for Dogs",
+    description: "Trusted flea & tick treatment, joint supplements, and heart care tablets — vet-recommended for every breed.",
     image: heroPet1,
   },
   {
-    subtitle: "Premium Cat Care",
-    title: "Everything Your Cat Needs!",
-    description: "From gourmet food to playful toys, find everything to keep your feline happy and healthy.",
+    subtitle: "Flea & Tick Protection",
+    title: "Exotix Fluralaner Chewable Tablets",
+    description: "12-week flea and tick protection for dogs. Fast-acting, long-lasting veterinary-grade treatment.",
     image: heroPet2,
   },
   {
-    subtitle: "Quality Dog Essentials",
-    title: "Happy Dogs, Happy Life!",
-    description: "Discover our range of premium dog food, treats, and accessories for your best friend.",
+    subtitle: "Dog Joint & Heart Care",
+    title: "Supplements Your Dog Deserves",
+    description: "Glucosamine joint support, heart health tablets, and skin & coat supplements — backed by veterinary science.",
     image: heroPet1,
   },
 ];
