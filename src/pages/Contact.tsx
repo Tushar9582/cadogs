@@ -31,7 +31,7 @@ const ContactPage = () => {
 
   return (
     <>
-      <Header cartCount={0} onCartClick={() => setCartOpen(true)} />
+      <Header cartCount={totalItems} onCartClick={() => setCartOpen(true)} />
       <main>
         {/* Hero */}
         <section className="bg-hero-bg py-12 md:py-16 relative overflow-hidden">
