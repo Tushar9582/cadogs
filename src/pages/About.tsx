@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { PawPrint, Heart, Award, Users, Target, Eye } from "lucide-react";
-import heroPet1 from "@/assets/hero-pet-1.png";
-import heroPet2 from "@/assets/hero-pet-2.png";
+import cadogsHero from "@/assets/cadogs-hero.jpeg";
 import aboutHeroBg from "@/assets/about-hero-bg.jpg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -71,7 +70,7 @@ const AboutPage = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="flex justify-center"
               >
-                <img src={heroPet1} alt="Our team with pets" className="rounded-3xl max-w-md w-full shadow-xl" />
+                <img src={cadogsHero} alt="Cadogs Veterinary Innovations" className="rounded-3xl max-w-md w-full shadow-xl" />
               </motion.div>
             </div>
           </div>
@@ -137,7 +136,7 @@ const AboutPage = () => {
         <section className="py-16 md:py-20">
           <div className="container">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <img src={heroPet2} alt="Our story" className="rounded-3xl shadow-lg w-full max-w-md mx-auto" />
+              <img src={cadogsHero} alt="Cadogs story" className="rounded-3xl shadow-lg w-full max-w-md mx-auto" />
               <div>
                 <div className="inline-flex items-center gap-2 text-primary font-medium text-sm mb-3">
                   <PawPrint className="w-4 h-4" /> Our Story
