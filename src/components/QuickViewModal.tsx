@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Star, Minus, Plus, ShoppingCart, Heart } from "lucide-react";
 import { Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
+import { buildProductJsonLd } from "@/components/SEOHead";
 
 interface QuickViewModalProps {
   product: Product | null;
@@ -12,6 +13,20 @@ interface QuickViewModalProps {
 const QuickViewModal = ({ product, onClose }: QuickViewModalProps) => {
   const [qty, setQty] = useState(1);
   const { addToCart } = useCart();
+
+  // Inject product JSON-LD when modal opens
+  useEffect(() => {
+    if (!product) return;
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.setAttribute("data-product-jsonld", "true");
+    script.textContent = JSON.stringify(buildProductJsonLd(product));
+    document.head.appendChild(script);
+    return () => {
+      const s = document.querySelector('script[data-product-jsonld]');
+      if (s) s.remove();
+    };
+  }, [product]);
 
   if (!product) return null;
 

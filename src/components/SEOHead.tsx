@@ -1,13 +1,15 @@
 import { useEffect } from "react";
+import { Product } from "@/data/products";
 
 interface SEOHeadProps {
   title: string;
   description: string;
   canonical?: string;
   type?: string;
+  jsonLd?: object;
 }
 
-const SEOHead = ({ title, description, canonical, type = "website" }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, type = "website", jsonLd }: SEOHeadProps) => {
   useEffect(() => {
     document.title = title;
 
@@ -37,9 +39,61 @@ const SEOHead = ({ title, description, canonical, type = "website" }: SEOHeadPro
       }
       link.setAttribute("href", canonical);
     }
-  }, [title, description, canonical, type]);
+
+    // JSON-LD
+    const existingScript = document.querySelector('script[data-seo-jsonld]');
+    if (existingScript) existingScript.remove();
+    if (jsonLd) {
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.setAttribute("data-seo-jsonld", "true");
+      script.textContent = JSON.stringify(jsonLd);
+      document.head.appendChild(script);
+    }
+
+    return () => {
+      const s = document.querySelector('script[data-seo-jsonld]');
+      if (s) s.remove();
+    };
+  }, [title, description, canonical, type, jsonLd]);
 
   return null;
 };
+
+export const buildProductJsonLd = (product: Product) => ({
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": product.name,
+  "description": product.description,
+  "sku": product.sku,
+  "category": product.category,
+  "brand": { "@type": "Brand", "name": "Cadogs Pet Science" },
+  "offers": {
+    "@type": "Offer",
+    "price": product.price,
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": `https://cadogs.com/shop?product=${product.id}`,
+    ...(product.oldPrice ? { "priceValidUntil": new Date(Date.now() + 30 * 86400000).toISOString().split("T")[0] } : {}),
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": product.rating,
+    "reviewCount": product.reviews,
+    "bestRating": 5,
+  },
+});
+
+export const buildProductListJsonLd = (products: Product[]) => ({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Cadogs Pet Science Products",
+  "numberOfItems": products.length,
+  "itemListElement": products.map((p, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "item": buildProductJsonLd(p),
+  })),
+});
 
 export default SEOHead;
