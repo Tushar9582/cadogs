@@ -13,9 +13,9 @@ import { useToast } from "@/hooks/use-toast";
 import contactHeroBg from "@/assets/contact-hero-bg.jpg";
 
 const contactInfo = [
-  { icon: Phone, title: "Call Us", info: "+91 9158 888 345", sub: "Mon-Fri, 9am-6pm IST" },
-  { icon: Mail, title: "Email Us", info: "hello@cadogs.com", sub: "We reply within 24 hours" },
-  { icon: MapPin, title: "Visit Us", info: "123 Pet Street", sub: "New York, NY 10001" },
+  { icon: Phone, title: "Call / WhatsApp", info: "+91 74473 13137", sub: "Mon-Sat, 9am-8pm IST" },
+  { icon: Mail, title: "Email Us", info: "enquire@cadogs.info", sub: "We reply within 24 hours" },
+  { icon: MapPin, title: "Visit Us", info: "60, Rasta Peth, Neelkanth Tower", sub: "Near Swami Narayan Temple, Jews Street, Pune-411011" },
   { icon: Clock, title: "Working Hours", info: "Mon-Sat: 9AM-8PM", sub: "Sunday: 10AM-6PM" },
 ];
 
@@ -143,7 +143,7 @@ const ContactPage = () => {
                 className="bg-card rounded-2xl border border-border overflow-hidden min-h-[400px] flex items-center justify-center"
               >
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280924892!2d-74.11976373946234!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1704900000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5!2d73.8567!3d18.5134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0e3c3c3c3c3%3A0x0!2sRasta%20Peth%2C%20Pune%2C%20Maharashtra%20411011!5e0!3m2!1sen!2sin!4v1704900000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: 400 }}
