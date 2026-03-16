@@ -3,7 +3,7 @@ import { Truck, RotateCcw, Crown, Headphones } from "lucide-react";
 const features = [
   { icon: Truck, title: "Free Delivery", desc: "Free shipping on veterinary products over ₹999" },
   { icon: RotateCcw, title: "Easy Returns", desc: "7-day return guarantee on all dog health products" },
-  { icon: Crown, title: "Vet Approved", desc: "All supplements are veterinary-grade & clinically tested" },
+  { icon: Crown, title: "Human Grade", desc: "All supplements are made with human-grade API & clinically tested" },
   { icon: Headphones, title: "Expert Support", desc: "24/7 veterinary product guidance & consultation" },
 ];
 
