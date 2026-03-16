@@ -3,6 +3,8 @@ import exotix1000 from "@/assets/exotix-1000mg.jpg";
 import primeJoint from "@/assets/prime-joint.jpg";
 import showcharge from "@/assets/showcharge-heart.jpg";
 import keramaxy from "@/assets/keramaxy-shampoo.jpg";
+import furluxImg from "@/assets/furlux-product.jpg";
+import furmuffinImg from "@/assets/furmuffin-product.jpg";
 
 export interface Product {
   id: string;
@@ -134,7 +136,7 @@ export const products: Product[] = [
     name: "Furlux Skin & Coat",
     form: "60 Chewable Tablets",
     price: 1335,
-    image: primeJoint,
+    image: furluxImg,
     rating: 5,
     reviews: 37,
     badge: "New",
@@ -167,6 +169,26 @@ export const products: Product[] = [
     mechanism: "Benzoyl Peroxide (antibacterial/keratolytic), Sulphur (antifungal/antiparasitic), Salicylic Acid (exfoliant), Zinc Oxide (soothing/protective).",
     precautions: "External use only; avoid eyes/mucous membranes; patch test recommended.",
     packing: "1×200ml Bottle",
+  },
+  {
+    id: "furmuffin-skin",
+    name: "Furmuffin Skin & Coat",
+    form: "30 Chewable Tablets",
+    price: 360,
+    image: furmuffinImg,
+    rating: 5,
+    reviews: 29,
+    badge: "New",
+    category: "Skin Care",
+    sku: "FMF-30",
+    tags: ["Skin", "Coat", "Dog", "Supplement", "Pigmentation"],
+    description: "Skin, coat & pigmentation support chewable tablets for dogs. Human grade API with Biotin, Zinc & Seaweed Extract.",
+    indications: "Healthy skin, strong shiny coat, optimal pigmentation (coat, nose, paw pads), firm claws.",
+    composition: "Biotin, Zinc, Vitamin E, Ascophyllum Nodosum (Seaweed Extract)",
+    dosage: "<10 kg – ½ tab daily. 10–20 kg – 1 tab daily. >20 kg – 1½ tabs daily.",
+    mechanism: "Biotin (keratin synthesis), Zinc (wound healing & coat health), Vitamin E (antioxidant protection), Seaweed extract (Omega-3, iodine for melanin production).",
+    precautions: "Caution in hyperthyroid or copper-sensitive dogs. Consult vet before use.",
+    packing: "1×30 Bottle",
   },
 ];
 
