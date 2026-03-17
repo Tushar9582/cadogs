@@ -16,7 +16,13 @@ const resources = [
   { label: "Gallery", to: "/gallery" },
   { label: "Blog", to: "/blog" },
 ];
-const services = ["Flea & Tick Treatment", "Joint Supplements", "Heart Care", "Skin & Coat", "Dog Shampoo"];
+const services = [
+  { label: "Flea & Tick Treatment", to: "/shop?category=Flea+%26+Tick" },
+  { label: "Joint Supplements", to: "/shop?category=Joint+Care" },
+  { label: "Heart Care", to: "/shop?category=Heart+Care" },
+  { label: "Skin & Coat", to: "/shop?category=Skin+Care" },
+  { label: "Dog Shampoo", to: "/shop?category=Shampoo" },
+];
 
 const Footer = () => {
   const [email, setEmail] = useState("");
