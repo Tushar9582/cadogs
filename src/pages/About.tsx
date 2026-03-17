@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import SEOHead from "@/components/SEOHead";
 import { PawPrint, Heart, Target, Eye } from "lucide-react";
-import cadogsHero from "@/assets/cadogs-hero.jpeg";
+import cadogsLogo from "@/assets/cadogs-logo.jpeg";
 import aboutHeroBg from "@/assets/about-hero-bg.jpg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
