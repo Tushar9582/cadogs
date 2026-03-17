@@ -11,8 +11,18 @@ const quickLinks = [
   { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },
 ];
-const resources = ["FAQ", "Testimonials", "Gallery", "Team", "Pricing"];
-const services = ["Flea & Tick Treatment", "Joint Supplements", "Heart Care", "Skin & Coat", "Dog Shampoo"];
+const resources = [
+  { label: "FAQ", to: "/contact" },
+  { label: "Gallery", to: "/gallery" },
+  { label: "Blog", to: "/blog" },
+];
+const services = [
+  { label: "Flea & Tick Treatment", to: "/shop?category=Flea+%26+Tick" },
+  { label: "Joint Supplements", to: "/shop?category=Joint+Care" },
+  { label: "Heart Care", to: "/shop?category=Heart+Care" },
+  { label: "Skin & Coat", to: "/shop?category=Skin+Care" },
+  { label: "Dog Shampoo", to: "/shop?category=Shampoo" },
+];
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -61,7 +71,7 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-primary-foreground mb-4">Resources</h4>
             <ul className="space-y-2">
               {resources.map((l) => (
-                <li key={l}><a href="#" className="text-sm opacity-80 hover:opacity-100 hover:text-primary transition-all">{l}</a></li>
+                <li key={l.label}><Link to={l.to} className="text-sm opacity-80 hover:opacity-100 hover:text-primary transition-all">{l.label}</Link></li>
               ))}
             </ul>
           </div>
@@ -71,7 +81,7 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-primary-foreground mb-4">Services</h4>
             <ul className="space-y-2">
               {services.map((l) => (
-                <li key={l}><a href="#" className="text-sm opacity-80 hover:opacity-100 hover:text-primary transition-all">{l}</a></li>
+                <li key={l.label}><Link to={l.to} className="text-sm opacity-80 hover:opacity-100 hover:text-primary transition-all">{l.label}</Link></li>
               ))}
             </ul>
           </div>
