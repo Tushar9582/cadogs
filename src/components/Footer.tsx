@@ -81,7 +81,7 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-primary-foreground mb-4">Services</h4>
             <ul className="space-y-2">
               {services.map((l) => (
-                <li key={l}><a href="#" className="text-sm opacity-80 hover:opacity-100 hover:text-primary transition-all">{l}</a></li>
+                <li key={l.label}><Link to={l.to} className="text-sm opacity-80 hover:opacity-100 hover:text-primary transition-all">{l.label}</Link></li>
               ))}
             </ul>
           </div>
