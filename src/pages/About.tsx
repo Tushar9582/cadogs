@@ -48,7 +48,7 @@ const AboutPage = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="flex justify-center"
               >
-                <img src={cadogsHero} alt="Cadogs — Preventive Dog Wellness" className="rounded-3xl max-w-md w-full shadow-xl" />
+                <img src={cadogsLogo} alt="Cadogs Logo" className="rounded-3xl max-w-xs w-full shadow-xl" />
               </motion.div>
             </div>
           </div>
