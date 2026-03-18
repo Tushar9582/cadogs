@@ -1,10 +1,12 @@
+import exotix250Img from "@/assets/exotix-250mg.jpg";
 import exotix500 from "@/assets/exotix-500mg.jpg";
 import exotix1000 from "@/assets/exotix-1000mg.jpg";
 import primeJoint from "@/assets/prime-joint.jpg";
 import showcharge from "@/assets/showcharge-heart.jpg";
 import keramaxy from "@/assets/keramaxy-shampoo.jpg";
 import furluxImg from "@/assets/furlux-product.jpg";
-import furmuffinImg from "@/assets/furmuffin-product.jpg";
+import furmuffinImg from "@/assets/furmuffin-box.jpg";
+import hipJointImg from "@/assets/hip-joint-shield.jpg";
 
 export interface Product {
   id: string;
