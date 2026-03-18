@@ -1,10 +1,12 @@
+import exotix250Img from "@/assets/exotix-250mg.jpg";
 import exotix500 from "@/assets/exotix-500mg.jpg";
 import exotix1000 from "@/assets/exotix-1000mg.jpg";
 import primeJoint from "@/assets/prime-joint.jpg";
 import showcharge from "@/assets/showcharge-heart.jpg";
 import keramaxy from "@/assets/keramaxy-shampoo.jpg";
 import furluxImg from "@/assets/furlux-product.jpg";
-import furmuffinImg from "@/assets/furmuffin-product.jpg";
+import furmuffinImg from "@/assets/furmuffin-box.jpg";
+import hipJointImg from "@/assets/hip-joint-shield.jpg";
 
 export interface Product {
   id: string;
@@ -36,7 +38,7 @@ export const products: Product[] = [
     generic: "Fluralaner",
     form: "Chewable Tablet",
     price: 609,
-    image: exotix500,
+    image: exotix250Img,
     rating: 5,
     reviews: 42,
     badge: "New",
@@ -188,6 +190,26 @@ export const products: Product[] = [
     dosage: "Up to 25 kg – 1 tablet daily. Above 25 kg – 2 tablets daily. Give with or after food.",
     mechanism: "Biotin (keratin synthesis), Zinc (wound healing & coat health), Vitamin E (antioxidant protection), Seaweed extract (Omega-3, iodine for melanin production).",
     precautions: "Caution in hyperthyroid or copper-sensitive dogs. Consult vet before use.",
+    packing: "1×60 Bottle",
+  },
+  {
+    id: "hip-joint-shield",
+    name: "Hip & Joint Shield",
+    form: "60 Chewable Tablets",
+    price: 1500,
+    image: hipJointImg,
+    rating: 5,
+    reviews: 34,
+    badge: "New",
+    category: "Joint Care",
+    sku: "HJS-60",
+    tags: ["Joint", "Hip", "Dog", "Supplement", "Chewable"],
+    description: "Complete hip & joint supplement for dogs. Human grade API with 60 chewable tablets for optimal joint health.",
+    indications: "Hip & joint support, arthritis/osteoarthritis, age-related joint wear, post-operative recovery, stiffness, limping.",
+    composition: "Glucosamine, Chondroitin, MSM, Hyaluronic Acid, Boswellia Serrata Extract, Collagen Type 2, Vitamin C, Vitamin E, Selenium",
+    dosage: "Up to 10 kg – ½ tablet daily. 11–25 kg – 1 tablet daily. 26–40 kg – 1½ tablets daily. Above 40 kg – 2 tablets daily.",
+    mechanism: "Glucosamine (cartilage repair), Chondroitin (prevents breakdown), MSM (collagen synthesis/pain relief), Hyaluronic Acid (lubrication), Boswellia (anti-inflammatory).",
+    precautions: "Avoid in pregnant/lactating unless advised; caution in diabetes/clotting disorders. Consult vet before use.",
     packing: "1×60 Bottle",
   },
 ];
