@@ -38,7 +38,7 @@ export const products: Product[] = [
     generic: "Fluralaner",
     form: "Chewable Tablet",
     price: 609,
-    image: exotix500,
+    image: exotix250Img,
     rating: 5,
     reviews: 42,
     badge: "New",
