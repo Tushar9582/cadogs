@@ -6,6 +6,7 @@ import showcharge from "@/assets/showcharge-heart.jpg";
 import keramaxy from "@/assets/keramaxy-shampoo.jpg";
 import furluxImg from "@/assets/furlux-product.jpg";
 import furmuffinImg from "@/assets/furmuffin-box.jpg";
+import furmuffinSmallImg from "@/assets/furmuffin-small.jpg";
 import hipJointImg from "@/assets/hip-joint-shield.jpg";
 
 export interface Product {
@@ -37,7 +38,7 @@ export const products: Product[] = [
     name: "Exotix Fluralaner 250mg",
     generic: "Fluralaner",
     form: "Chewable Tablet",
-    price: 609,
+    price: 653,
     image: exotix250Img,
     rating: 5,
     reviews: 42,
@@ -58,7 +59,7 @@ export const products: Product[] = [
     name: "Exotix Fluralaner 500mg",
     generic: "Fluralaner",
     form: "Chewable Tablet",
-    price: 816,
+    price: 870,
     image: exotix500,
     rating: 5,
     reviews: 38,
@@ -98,7 +99,7 @@ export const products: Product[] = [
     id: "prime-joint",
     name: "Prime Joint Support",
     form: "60 Chewable Tablets",
-    price: 1500,
+    price: 1335,
     image: primeJoint,
     rating: 5,
     reviews: 56,
@@ -137,7 +138,7 @@ export const products: Product[] = [
     id: "furlux-skin",
     name: "Furlux Skin & Coat",
     form: "30 Chewable Tablets",
-    price: 800,
+    price: 1800,
     image: furluxImg,
     rating: 5,
     reviews: 37,
@@ -176,7 +177,7 @@ export const products: Product[] = [
     id: "furmuffin-skin",
     name: "Furmuffin Skin & Coat",
     form: "60 Chewable Tablets",
-    price: 800,
+    price: 1500,
     image: furmuffinImg,
     rating: 5,
     reviews: 29,
@@ -191,6 +192,26 @@ export const products: Product[] = [
     mechanism: "Biotin (keratin synthesis), Zinc (wound healing & coat health), Vitamin E (antioxidant protection), Seaweed extract (Omega-3, iodine for melanin production).",
     precautions: "Caution in hyperthyroid or copper-sensitive dogs. Consult vet before use.",
     packing: "1×60 Bottle",
+  },
+  {
+    id: "furmuffin-small",
+    name: "Furmuffin Small",
+    form: "30 Chewable Tablets",
+    price: 800,
+    image: furmuffinSmallImg,
+    rating: 5,
+    reviews: 22,
+    badge: "New",
+    category: "Skin Care",
+    sku: "FMF-30",
+    tags: ["Skin", "Coat", "Dog", "Supplement", "Pigmentation"],
+    description: "Skin, coat & pigmentation support chewable tablets for dogs. Compact 30-tablet pack. Human grade API.",
+    indications: "Healthy skin, strong shiny coat, optimal pigmentation (coat, nose, paw pads), firm claws.",
+    composition: "Biotin, Zinc, Vitamin E, Ascophyllum Nodosum (Seaweed Extract)",
+    dosage: "Up to 25 kg – 1 tablet daily. Above 25 kg – 2 tablets daily. Give with or after food.",
+    mechanism: "Biotin (keratin synthesis), Zinc (wound healing & coat health), Vitamin E (antioxidant protection), Seaweed extract (Omega-3, iodine for melanin production).",
+    precautions: "Caution in hyperthyroid or copper-sensitive dogs. Consult vet before use.",
+    packing: "1×30 Bottle",
   },
   {
     id: "hip-joint-shield",
