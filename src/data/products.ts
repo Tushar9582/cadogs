@@ -99,7 +99,7 @@ export const products: Product[] = [
     id: "prime-joint",
     name: "Prime Joint Support",
     form: "60 Chewable Tablets",
-    price: 1500,
+    price: 1335,
     image: primeJoint,
     rating: 5,
     reviews: 56,
