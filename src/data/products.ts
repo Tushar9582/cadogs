@@ -6,6 +6,7 @@ import showcharge from "@/assets/showcharge-heart.jpg";
 import keramaxy from "@/assets/keramaxy-shampoo.jpg";
 import furluxImg from "@/assets/furlux-product.jpg";
 import furmuffinImg from "@/assets/furmuffin-box.jpg";
+import furmuffinSmallImg from "@/assets/furmuffin-small.jpg";
 import hipJointImg from "@/assets/hip-joint-shield.jpg";
 
 export interface Product {
