@@ -10,21 +10,15 @@ import CartSidebar from "@/components/CartSidebar";
 import WishlistSidebar from "@/components/WishlistSidebar";
 import { useCart } from "@/context/CartContext";
 
-import galleryGsd from "@/assets/gallery-gsd-products.jpg";
-import galleryCat from "@/assets/gallery-girl-cat.jpg";
-import galleryGolden from "@/assets/gallery-golden-play.jpg";
-import galleryPuppy from "@/assets/gallery-puppy-grass.jpg";
-import galleryGrooming from "@/assets/gallery-grooming.jpg";
-import galleryBeach from "@/assets/gallery-beach-dog.jpg";
+import galleryGirlGsd from "@/assets/gallery-girl-gsd.jpg";
+import galleryTrophy from "@/assets/gallery-trophy.jpg";
+import galleryGsdPuppy from "@/assets/gallery-gsd-puppy.jpg";
 import aboutHeroBg from "@/assets/about-hero-bg.jpg";
 
 const galleryImages = [
-  { src: galleryGsd, title: "GSD with Cadogs Products", category: "Products" },
-  { src: galleryCat, title: "Pet Parent Love", category: "Community" },
-  { src: galleryGolden, title: "Golden Retriever Playtime", category: "Happy Pets" },
-  { src: galleryPuppy, title: "Adorable Puppy", category: "Happy Pets" },
-  { src: galleryGrooming, title: "Professional Grooming", category: "Care" },
-  { src: galleryBeach, title: "Beach Day Fun", category: "Happy Pets" },
+  { src: galleryGirlGsd, title: "Girl with German Shepherd", category: "Community" },
+  { src: galleryTrophy, title: "SG-1 Winner — Dog Show", category: "Community" },
+  { src: galleryGsdPuppy, title: "GSD Puppy in Training", category: "Happy Pets" },
 ];
 
 const categories = ["All", "Products", "Community", "Happy Pets", "Care"];
