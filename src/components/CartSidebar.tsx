@@ -36,7 +36,7 @@ const CartSidebar = () => {
       (i) => `- ${i.product.name} x ${i.qty} = ₹${(i.product.price * i.qty).toLocaleString()}`
     );
     const msg = `Hello, I want to order the following products from Cadogs:\n${lines.join("\n")}\nTotal: ₹${subtotal.toLocaleString()}\n\nView products: ${shopUrl}\nPlease confirm availability and payment.`;
-    window.open(`https://wa.me/917447313137?text=${encodeURIComponent(msg)}`, "_blank");
+    window.open(`https://wa.me/916266959582?text=${encodeURIComponent(msg)}`, "_blank");
   };
 
   return (
